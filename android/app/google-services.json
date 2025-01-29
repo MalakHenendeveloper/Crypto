@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "195119510736",
+    "project_id": "cryptowallet-601c2",
+    "storage_bucket": "cryptowallet-601c2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195119510736:android:9744da69f97ff264605ad5",
+        "android_client_info": {
+          "package_name": "com.example.crypto_wallets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAICmcHX5385ReBSWrKiVo-lfEj7CqGaYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

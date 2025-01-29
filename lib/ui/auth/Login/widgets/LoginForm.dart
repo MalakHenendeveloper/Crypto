@@ -1,0 +1,50 @@
+
+import 'package:crypto_wallets/ui/auth/Login/Cubit/LoginViewModel.dart';
+import 'package:crypto_wallets/ui/auth/widgets/CusttomText.dart';
+import 'package:crypto_wallets/ui/auth/widgets/CuttomTextfield.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class LoginForm extends StatelessWidget {
+  final LoginViewModel viewmodel;
+  LoginForm({required this.viewmodel});
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Custtomtext(text: 'Sign In', fontsize: 18.sp, color: Colors.white),
+        SizedBox(height: 15.h),
+        Custtomtext(text: 'Email', fontsize: 18.sp, color: Colors.white),
+        Cuttomtextfield(hint: 'Email', controller: viewmodel.email),
+        Custtomtext(text: 'Password', fontsize: 18.sp, color: Colors.white),
+        Cuttomtextfield(hint: 'Password', controller: viewmodel.password),
+        InkWell(
+          child: Custtomtext(
+            alignment: Alignment.topRight,
+            text: 'Forget Password?',
+            fontsize: 18.sp,
+            color: Colors.white,
+          ),
+        ),
+        SizedBox(height: 10.h),
+        InkWell(
+          onTap: () {
+            viewmodel.login();
+          },
+          child: Container(
+            width: 300.w,
+            padding: EdgeInsets.all(5),
+            margin: EdgeInsets.symmetric(horizontal: 20.w, vertical: 5.h),
+            alignment: Alignment.center,
+            child: Custtomtext(text: 'Sign In', fontsize: 20.sp),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20.r),
+              color: Colors.amber,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
