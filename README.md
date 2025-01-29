@@ -49,9 +49,7 @@ If you wish to contribute to the project, please fork the repository and submit 
 
 👨‍💻 Author
 
-Loka
+Malak Henen
 
-📜 License
 
-MIT License
 
