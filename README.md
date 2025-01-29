@@ -43,10 +43,6 @@ flutter run
 
 🔗 API integration for fetching cryptocurrency data
 
-🤝 Contribution
-
-If you wish to contribute to the project, please fork the repository and submit a Pull Request after making changes.
-
 👨‍💻 Author
 
 Malak Henen
