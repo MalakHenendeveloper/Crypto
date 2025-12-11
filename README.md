@@ -1,51 +1,61 @@
-🚀 Crypto Wallets
+# Crypto Wallets 🚀
 
-Crypto Wallets is a Flutter application designed to manage digital wallets and log in using Firebase Authentication. The app follows Clean Architecture to ensure a well-structured and scalable codebase. It also utilizes Bloc/Cubit for state management and GetIt for dependency injection.
+A modern, feature-rich cryptocurrency tracking application built with Flutter. This app provides real-time market data, detailed coin information, and interactive charts, all wrapped in a stunning, space-themed glassmorphism UI.
 
-🛠️ Technologies and Tools Used
+## ✨ Features
 
-🏗 Flutter: The core framework for building the application.
+- **Real-Time Market Data**: Live tracking of cryptocurrency prices, market cap, and 24h changes.
+- **Interactive Charts**: Detailed price history charts using Syncfusion for in-depth analysis.
+- **Modern UI/UX**: Designed with a premium dark theme, glassmorphism effects, and smooth animations using `flutter_screenutil` for responsiveness.
+- **Authentication**: Secure Login and Registration flow (UI implementation).
+- **Portfolio Management**: Tools to track your crypto assets.
+- **Robust Architecture**: Built using **Clean Architecture** principles to separate Data, Domain, and Presentation layers.
 
-📝 Dart: The programming language used.
+## 🛠 Tech Stack
 
-🌐 REST API: To fetch cryptocurrency data from an external source.
+- **Framework**: [Flutter](https://flutter.dev/)
+- **State Management**: [Flutter Bloc](https://pub.dev/packages/flutter_bloc) (Cubit)
+- **Architecture**: MVVM + Clean Architecture
+- **Networking**: [Dio](https://pub.dev/packages/dio) with Interceptors
+- **Dependency Injection**: [GetIt](https://pub.dev/packages/get_it) & [Injectable](https://pub.dev/packages/injectable)
+- **UI Libraries**:
+  - `flutter_screenutil` (Responsive Design)
+  - `syncfusion_flutter_charts` (Charting)
+  - `shimmer` (Loading Effects)
+  - `da_glassmorph` (Glass Effects)
 
-🔄 Bloc/Cubit: For efficient state management.
+## 📂 Project Structure
 
-📦 GetIt: For dependency injection and better code organization.
+```
+lib/
+├── core/           # Constants, Routes, Theme, API endpoints
+├── data/           # Data Source implementations, Repositories, Models
+├── domain/         # Entities, Repository Interfaces, UseCases
+└── ui/             # Screens, Widgets, ViewModels (Cubits)
+```
 
-🔑 Firebase Authentication: For user authentication using email and password.
+## 🚀 Getting Started
 
-📱 ScreenUtil: To make the UI responsive across different screen sizes.
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/MalakHenendeveloper/Crypto.git
+    ```
+2.  **Install dependencies**:
+    ```bash
+    flutter pub get
+    ```
+3.  **Run dependencies generation** (if using injectable/build_runner):
+    ```bash
+    dart run build_runner build --delete-conflicting-outputs
+    ```
+4.  **Run the app**:
+    ```bash
+    flutter run
+    ```
 
-🏛 Clean Architecture: For a well-defined project structure.
+## 👨‍💻 Author
 
-▶️ How to Run the Application
+**Malak Henen**
 
-Ensure Flutter and Dart are installed on your machine.
-
-Run the following commands in the terminal:
-
-flutter pub get
-flutter run
-
-✨ Key Features
-
-✅ Login using Firebase Authentication✅ Fetch cryptocurrency data using REST API✅ State management with Bloc/Cubit✅ Full screen adaptability using ScreenUtil✅ Well-structured code with Clean Architecture✅ Dependency injection using GetIt
-
-📋 Requirements
-
-🚀 Flutter 3.16.0 or later
-
-💡 Dart 3.0 or later
-
-🔑 Firebase Authentication configured in the project
-
-🔗 API integration for fetching cryptocurrency data
-
-👨‍💻 Author
-
-Malak Henen
-
-
-
+---
+*Built with ❤️ using Flutter*
